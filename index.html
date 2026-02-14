@@ -14,14 +14,31 @@
 <model-viewer
   src="textured.glb"
   ios-src="textured.usdz"
-  alt="Modelo 3D de prueba"
+  alt="Jarrón 3D"
   ar
   ar-modes="webxr scene-viewer quick-look"
+  ar-scale="auto"
   camera-controls
-  auto-rotate
   shadow-intensity="1"
   exposure="1"
-></model-viewer>
+  style="width:100%; height:100vh;">
+
+  <button slot="ar-button" style="
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  ">
+    Ver en tu espacio
+  </button>
+
+</model-viewer>
 
 </body>
 </html>
